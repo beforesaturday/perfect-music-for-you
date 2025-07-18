@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artist Upload</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Your Piece</h1>
+    <form id="artistForm">
+      <input type="text" id="artistName" placeholder="Artist Name" required><br>
+      <input type="text" id="contactInfo" placeholder="Contact Info" required><br>
+      <input type="text" id="title" placeholder="Title of the Piece" required><br>
+      <label>YouTube/Streaming Link:</label><br>
+      <input type="url" id="link" placeholder="https://youtube.com/..." required><br>
+      <select id="type" required>
+        <option value="">Type</option>
+        <option value="Song">Song</option>
+        <option value="Instrumental">Instrumental</option>
+        <option value="Acapella">Acapella</option>
+      </select><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="confirmation"></div>
+    <a href="index.html">Back</a>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
